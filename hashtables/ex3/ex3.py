@@ -1,9 +1,23 @@
 def intersection(arrays):
+
     """
     YOUR CODE HERE
     """
     # Your code here
+    length = len(arrays)
+    a_dict = {}
+    for array in arrays:
+        for num in array:
+            if num not in a_dict:
+                a_dict[num] = 1
+            else:
+                a_dict[num] += 1
+    result = []
 
+    for item in list(a_dict.items()):
+        if item[1] == length:
+            result.append(item[0])
+            
     return result
 
 
