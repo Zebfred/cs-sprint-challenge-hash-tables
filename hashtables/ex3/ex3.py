@@ -17,8 +17,9 @@ def intersection(arrays):
     for item in list(a_dict.items()):
         if item[1] == length:
             result.append(item[0])
-            
+
     return result
+#some existing change
 
 
 if __name__ == "__main__":
